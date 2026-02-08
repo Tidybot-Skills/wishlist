@@ -24,9 +24,9 @@
       "name": "Count People in Room",
       "description": "Count people in room by rotating and scanning with camera",
       "votes": 1,
-      "status": "pending",
-      "assigned": null,
-      "repo": null
+      "status": "done",
+      "assigned": "evil_sky",
+      "repo": "TidyBotArmy/count-people-in-room"
     }
   ]
 }
