@@ -1,4 +1,11 @@
 {
-  "updated": "2026-02-07T17:41:00Z",
-  "skills": {}
+  "updated": "2026-02-08T05:50:00Z",
+  "skills": {
+    "count-people-in-room": {
+      "repo": "TidyBotArmy/count-people-in-room",
+      "description": "Count people in room by rotating and scanning with camera",
+      "author": "evil_sky",
+      "dependencies": []
+    }
+  }
 }

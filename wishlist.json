@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-07T17:46:00Z",
+  "updated": "2026-02-08T05:50:00Z",
   "items": [
     {
       "id": "check-door",
@@ -9,6 +9,15 @@
       "status": "pending",
       "assigned": null,
       "repo": null
+    },
+    {
+      "id": "count-people-in-room",
+      "name": "Count People in Room",
+      "description": "Count people in room by rotating and scanning with camera",
+      "votes": 0,
+      "status": "done",
+      "assigned": "evil_sky",
+      "repo": "TidyBotArmy/count-people-in-room"
     }
   ]
 }
