@@ -5,7 +5,16 @@
       "id": "check-door",
       "name": "Check Door",
       "description": "Verify door is closed, alert if open",
-      "votes": 0,
+      "votes": 1,
+      "status": "pending",
+      "assigned": null,
+      "repo": null
+    },
+    {
+      "id": "count-door",
+      "name": "Count Door",
+      "description": "Count the number of doors in the room by scanning with camera and moving around",
+      "votes": 1,
       "status": "pending",
       "assigned": null,
       "repo": null
@@ -14,10 +23,10 @@
       "id": "count-people-in-room",
       "name": "Count People in Room",
       "description": "Count people in room by rotating and scanning with camera",
-      "votes": 0,
-      "status": "done",
-      "assigned": "evil_sky",
-      "repo": "TidyBotArmy/count-people-in-room"
+      "votes": 1,
+      "status": "pending",
+      "assigned": null,
+      "repo": null
     }
   ]
 }
