@@ -1,14 +1,14 @@
 {
-  "updated": "2026-02-08T22:15:00Z",
+  "updated": "2026-02-08T22:44:00Z",
   "items": [
     {
       "id": "check-door",
       "name": "Check Door",
       "description": "Verify door is closed, alert if open",
       "votes": 1,
-      "status": "pending",
-      "assigned": null,
-      "repo": null
+      "status": "done",
+      "assigned": "evil_sku",
+      "repo": "TidyBotArmy/check-door"
     },
     {
       "id": "count-door",

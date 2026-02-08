@@ -1,2 +1,11 @@
 {
+  "updated": "2026-02-08T22:44:00Z",
+  "skills": {
+    "check-door": {
+      "repo": "TidyBotArmy/check-door",
+      "description": "Verify door is closed, alert if open. Uses YOLO to detect open vs closed doors.",
+      "author": "evil_sku",
+      "dependencies": []
+    }
+  }
 }
