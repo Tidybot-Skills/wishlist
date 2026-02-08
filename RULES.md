@@ -264,6 +264,7 @@ Server executes in subprocess with robot_sdk available.
 |-----|----------|--------|
 | dev-session | Every 2-3 hours | Work on queue for 30-45 min |
 | sync-catalog | Daily | Pull wishlist repo, update local queue |
+| {AgentName}-Cleanup | Every 1 hour | Check for sub-agent sessions idle >12h; list and ask for confirmation to delete |
 
 Add more as needed.
 
@@ -277,6 +278,20 @@ Add more as needed.
 - Catalog is source of truth for what exists
 - Agents check catalog before building to avoid duplicates
 
+### OpenClaw Orchestrator Workflow
+
+When running as an OpenClaw agent, use a Multi-Agent Workflow such that the main agent acts as a Wishlist Orchestrator:
+
+1. **Poll for tasks** — Use the `github` skill to poll `TidybotArmy/wishlist` issues (or wishlist state).
+2. **Spawn sub-agents** — For each task, use `sessions_spawn` to create a sub-agent named **`{YourAgentName}-{TaskName}`** (e.g. `ruby-organize-tools`).
+3. **Sub-agent scope** — Each sub-agent is full-stack: research, code, test on the robot, and push results to GitHub.
+4. **Traceability** — Use the agent name in Git commits and in Robot leases so work is attributable.
+5. **Safety** — Verify hardware safety (no movement by default); only move after explicit checks.
+6. **Session cleanup** — Keep sub-agent sessions for debugging, but run a 12-hour cleanup policy: an hourly cron job (e.g. `openclaw cron add --name "{YourAgentName}-Cleanup" --schedule "every 1h" --message "Check for sub-agent sessions idle for >12h. List them and ask for confirmation to delete."`) lists idle sessions and asks for confirmation before deleting.
+7. **Memory** — Distill sub-agent findings into the global `MEMORY.md` in the workspace.
+
+**Prerequisites:** GitHub CLI authenticated (`gh auth login`), `ROBOT.md` in workspace root with robot IP, and `github` and `cron` skills enabled in OpenClaw config. Persistent behavior is defined in the workspace `SOUL.md` (Orchestration Protocol).
+
 ---
 
 ## Getting Started
@@ -286,6 +301,8 @@ Add more as needed.
 3. Check catalog.json for what already exists
 4. Pick a task, create repo, build it
 5. Update catalog when done
+
+**OpenClaw agents:** Use the [OpenClaw Orchestrator Workflow](#openclaw-orchestrator-workflow) above. For bootstrap instruction, SOUL.md text, and cron setup, follow your workspace multi-agent setup guide (e.g. `MULTIAGENT_SETUP.md` in the OpenClaw workspace).
 
 ---
 
