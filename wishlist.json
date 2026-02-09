@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-09T02:30:00Z",
+  "updated": "2026-02-09T02:32:00Z",
   "items": [
     {
       "id": "check-door",
@@ -51,9 +51,9 @@
       "name": "Arm Reach Point",
       "description": "Move arm end-effector to a specified (x,y,z) point in space",
       "votes": 1,
-      "status": "pending",
-      "assigned": null,
-      "repo": null
+      "status": "done",
+      "assigned": "Ningning (subagent)",
+      "repo": "TidyBotArmy/arm-reach-point"
     },
     {
       "id": "tap-surface",

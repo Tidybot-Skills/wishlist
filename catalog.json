@@ -1,6 +1,12 @@
 {
-  "updated": "2026-02-09T02:30:00Z",
+  "updated": "2026-02-09T02:32:00Z",
   "skills": {
+    "arm-reach-point": {
+      "repo": "TidyBotArmy/arm-reach-point",
+      "description": "Move Franka arm end-effector to specified (x,y,z) in Cartesian space.",
+      "author": "Ningning (subagent)",
+      "dependencies": []
+    },
     "arm-sweep": {
       "repo": "TidyBotArmy/arm-sweep",
       "description": "Sweep the Franka Panda arm across a horizontal arc at a specified height.",
