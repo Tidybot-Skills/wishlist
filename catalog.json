@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-09T02:32:00Z",
+  "updated": "2026-02-10T20:59:00Z",
   "skills": {
     "arm-reach-point": {
       "repo": "TidyBotArmy/arm-reach-point",
@@ -54,6 +54,15 @@
       "success_rate": 0,
       "total_trials": 0,
       "institutions_tested": 0
+    },
+    "look-forward": {
+      "repo": "Tidybot-Skills/look-forward",
+      "description": "Point wrist camera forward and detect objects with YOLO. Tilts EE ~40° to scan ahead.",
+      "author": "jarvis",
+      "dependencies": [],
+      "success_rate": 100,
+      "total_trials": 1,
+      "institutions_tested": 1
     },
     "pick-up-banana": {
       "repo": "TidyBotArmy/pick-up-banana",
