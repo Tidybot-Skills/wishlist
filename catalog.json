@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-14T01:02:00Z",
+  "updated": "2026-02-14T08:00:00Z",
   "skills": {
     "center-object": {
       "repo": "Tidybot-Skills/center-object",
@@ -48,6 +48,27 @@
       "success_rate": 78,
       "total_trials": 9,
       "institutions_tested": 1
+    },
+    "place-object": {
+      "repo": "Tidybot-Skills/place-object",
+      "description": "Visual servoing place skill. Raise-and-look-around approach: from home height, camera sees past held object. Mask-only YOLO detection for robust tracking during lateral centering and descent.",
+      "author": "evilsky",
+      "dependencies": [],
+      "success_rate": 0,
+      "total_trials": 0,
+      "institutions_tested": 0
+    },
+    "pick-and-place": {
+      "repo": "Tidybot-Skills/pick-and-place",
+      "description": "Combined pick-and-place skill: IBVS servo-descend pick with search wiggle, then raise-and-look-around visual servo place with mask-only tracking.",
+      "author": "evilsky",
+      "dependencies": [
+        "pick-up-object",
+        "place-object"
+      ],
+      "success_rate": 0,
+      "total_trials": 0,
+      "institutions_tested": 0
     }
   }
 }
