@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-14T01:02:00Z",
+  "updated": "2026-02-16T06:43:59Z",
   "items": [
     {
       "id": "count-people-in-room",
@@ -35,6 +35,15 @@
       "votes": 2,
       "status": "pending",
       "assigned": "evilsky",
+      "repo": null
+    },
+    {
+      "id": "realsense-slam",
+      "name": "RealSense SLAM Service",
+      "description": "SLAM system using RealSense D400 depth cameras (RTAB-Map or similar). Provides real-time mapping, localization, 2D occupancy grid, and 3D point cloud. Runs as a service on the robot for navigation and world-frame object localization.",
+      "votes": 1,
+      "status": "pending",
+      "assigned": null,
       "repo": null
     }
   ]
