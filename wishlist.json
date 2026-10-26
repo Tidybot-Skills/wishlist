@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-14T01:02:00Z",
+  "updated": "2026-02-17T22:30:00Z",
   "items": [
     {
       "id": "count-people-in-room",
@@ -24,9 +24,9 @@
       "name": "Place on Desk",
       "description": "Assume there is an object in the gripper, place the object on the top surface of the desk using vision, base, arm, and gripper",
       "votes": 2,
-      "status": "pending",
+      "status": "done",
       "assigned": "evilsky",
-      "repo": null
+      "repo": "Tidybot-Skills/place-object"
     },
     {
       "id": "pull-object",
